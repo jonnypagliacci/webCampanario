@@ -1,5 +1,7 @@
 import Navbar from "./Components/Navbar";
-import "./styleNavbar.css";
+import BotonWatss from "./Components/Wats";
+import "./EstilosComponentes/styleNavbar.css";
+import "./EstilosComponentes/watsstyle.css"
 import Principal from "./Pages/Principal";
 import Contacto from "./Pages/Contacto";
 import Promociones from "./Pages/Promociones";
@@ -11,6 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <BotonWatss />
       <div>
         <Routes>
           <Route path="/Principal" element = {<Principal /> } />
