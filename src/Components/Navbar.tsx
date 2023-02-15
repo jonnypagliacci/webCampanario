@@ -1,14 +1,15 @@
+import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <nav className="nav">
-      <Link to="/" className="site-title">
+      <Link to="/Principal" className="site-title">
         Laboratorio Mèdico del Campanario
       </Link>
       <ul>
         <li>
-          <Link to="/Quienes somos">Quienes somos</Link>
+          <Link to="/QuienesSomos">Quienes somos</Link>
         </li>
         <li>
           <Link to="/Servicios">Servicios</Link>
@@ -20,6 +21,10 @@ export default function Navbar() {
           <Link to="/Contacto">Contacto</Link>
         </li>
       </ul>
+        <Outlet />
     </nav>
   );
 };
+
+
+

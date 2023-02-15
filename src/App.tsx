@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import "./styleNavbar.css";
+import Principal from "./Pages/Principal";
 import Contacto from "./Pages/Contacto";
 import Promociones from "./Pages/Promociones";
 import QuienesSomos from "./Pages/QuienesSomos";
@@ -12,10 +13,11 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element = {<Contacto /> } />
+          <Route path="/Principal" element = {<Principal /> } />
+          <Route path="/Contacto" element = {<Contacto /> } />
           <Route path="/Promociones" element = {<Promociones /> } />
-          <Route path="/QuienesSomos" element = {<QuienesSomos /> } />
           <Route path="/Servicios" element = {<Servicios /> } />
+          <Route path="/QuienesSomos" element = {<QuienesSomos /> } />
         </Routes>
       </div>
     </>
