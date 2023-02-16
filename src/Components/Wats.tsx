@@ -1,8 +1,17 @@
-export default function BotonWatss() {
-    return (
-        <div>
-            <a href="https://api.whatsapp.com/send?phone=5214427157000&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Estudios%202." className="float"></a>
-            <i className="fa fa-whatsapp my-float"></i>
-        </div>
-    )
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+
+interface watsProps {
+    phoneNumber : string,
+    chatMessage : string,
+    placeholder : string,
+}
+
+export default function WatsButton(props : watsProps) {
+
+  return (
+      <FloatingWhatsApp 
+      phoneNumber='521427157000' 
+      accountName='Laboratorio Médico del Campanario' 
+      placeholder = "Escriba el mensaje"/>
+  )
 }

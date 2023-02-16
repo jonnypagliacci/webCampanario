@@ -1,7 +1,6 @@
 import Navbar from "./Components/Navbar";
-import BotonWatss from "./Components/Wats";
+import WatsButton from "./Components/wats"
 import "./EstilosComponentes/styleNavbar.css";
-import "./EstilosComponentes/watsstyle.css"
 import Principal from "./Pages/Principal";
 import Contacto from "./Pages/Contacto";
 import Promociones from "./Pages/Promociones";
@@ -13,14 +12,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <BotonWatss />
+      <WatsButton
+        phoneNumber={"5214427157000"}
+        placeholder={"Escriba su mensaje"} 
+        chatMessage= "Hola, en que te puedo ayudar"/>
       <div>
         <Routes>
-          <Route path="/Principal" element = {<Principal /> } />
-          <Route path="/Contacto" element = {<Contacto /> } />
-          <Route path="/Promociones" element = {<Promociones /> } />
-          <Route path="/Servicios" element = {<Servicios /> } />
-          <Route path="/QuienesSomos" element = {<QuienesSomos /> } />
+          <Route path="/Principal" element={<Principal />} />
+          <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/Promociones" element={<Promociones />} />
+          <Route path="/Servicios" element={<Servicios />} />
+          <Route path="/QuienesSomos" element={<QuienesSomos />} />
         </Routes>
       </div>
     </>
