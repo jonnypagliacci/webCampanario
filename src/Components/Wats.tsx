@@ -4,7 +4,7 @@ interface watsProps {
     phoneNumber : string,
     chatMessage : string,
     placeholder : string,
-    statusMessage : string
+    statusMessage: string
 }
 
 export default function WatsButton(props : watsProps) {
@@ -12,9 +12,8 @@ export default function WatsButton(props : watsProps) {
   return (
       <FloatingWhatsApp 
       phoneNumber='521427157000' 
-      chatMessage= 'Hola, en que te puedo ayudar?'
       accountName='Laboratorio Médico del Campanario' 
-      placeholder = "Escriba el mensaje"
-      statusMessage= ' '/>
+      placeholder= "Escriba el mensaje"
+      chatMessage= "Hola, en que te puedo ayudar"/>
   )
 }

@@ -14,11 +14,11 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav ul {
@@ -35,7 +35,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: .25rem;
+    padding: 1rem;
 }
 
 .nav li.active {
