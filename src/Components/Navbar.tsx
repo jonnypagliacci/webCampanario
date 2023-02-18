@@ -1,12 +1,12 @@
-import { Outlet } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
+
   return (
     <nav className="nav">
       <Link to="/Principal" className="site-title">
-        Laboratorio Médico del Campanario
+      <img src="./imagenesCarrusel/logo.jpg" alt=" "></img>
       </Link>
       <ul>
         <li>
@@ -22,10 +22,7 @@ export default function Navbar() {
           <Link to="/Contacto">Contacto</Link>
         </li>
       </ul>
-        <Outlet />
+      <Outlet />
     </nav>
   );
-};
-
-
-
+}

@@ -8,8 +8,8 @@ body {
 
 .nav {
     font-size: 22px;
-    background-color: #0015ff;
-    color: white;
+    background-color: #001bb6;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,8 @@ body {
 }
 
 .site-title {
-    font-size: 1.5rem;
+    width: 250px;
+
 }
 
 .nav ul {
@@ -43,7 +44,7 @@ body {
 }
 
 .nav li:hover {
-    background-color: #0088ff;
+    background-color: #757e86;
 }
 
 
