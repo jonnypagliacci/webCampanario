@@ -3,9 +3,14 @@ import { Navbar } from 'react-bootstrap'
 
 export default function NavBarUp () {
     return <div>
-        <Navbar bg = 'info' variant = 'dark' sticky='top'>
+        <Navbar bg = 'myBlue' variant = 'dark' sticky='top'>
             <Navbar.Brand>
-                Queretaro
+                <ul>
+                    <li>Queretaro</li>
+                    <img className='faceIcon' 
+                    src="./imagenesNavBarUp/facebook.png" alt=" " 
+                    onClick={() => {window.location.href = "https://www.facebook.com/laboratoriocampanario"}} />
+                </ul>
             </Navbar.Brand>
         </Navbar>
     </div>
