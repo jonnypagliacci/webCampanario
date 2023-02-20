@@ -1,3 +1,5 @@
+import NavBarUp from  './Components/NavBarUp'
+import './EstilosComponentes/styleNavBarUp.css'
 import Navbar from "./Components/Navbar";
 import WatsButton from "./Components/Wats"
 import "./EstilosComponentes/styleNavbar.css";
@@ -11,9 +13,10 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
+      <NavBarUp />
       <Navbar />
       <WatsButton
-        phoneNumber="5214427157000"
+        phoneNumber="52 1 442 715 7000"
         placeholder="Escriba su mensaje" 
         chatMessage= "Hola, en que te puedo ayudar?"
         statusMessage= ' '/>
