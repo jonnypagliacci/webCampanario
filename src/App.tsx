@@ -16,7 +16,7 @@ function App() {
       <NavBarUp />
       <Navbar />
       <WatsButton
-        phoneNumber="52 1 442 715 7000"
+        phoneNumber="5214427157000"
         placeholder="Escriba su mensaje" 
         chatMessage= "Hola, en que te puedo ayudar?"
         statusMessage= ' '/>

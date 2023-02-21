@@ -8,8 +8,9 @@ export default function NavBarUp () {
                 <ul>
                     <li>Queretaro</li>
                     <img className='faceIcon' 
-                    src="./imagenesNavBarUp/facebook.png" alt=" " 
-                    onClick={() => {window.location.href = "https://www.facebook.com/laboratoriocampanario"}} />
+                    src='imagenesNavBarUp/facebook.png' 
+                    alt=" " 
+                    onClick={() => {window.open("https://www.facebook.com/laboratoriocampanario",)}} />
                 </ul>
             </Navbar.Brand>
         </Navbar>
